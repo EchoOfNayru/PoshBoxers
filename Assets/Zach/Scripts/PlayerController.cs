@@ -8,6 +8,7 @@ public class PlayerController : MonoBehaviour {
     public float gravity;
     public float groundLevel;
     public float jumpHeight;
+    public float health { get; internal set; }
 
     bool moveLeft;
     bool moveRight;

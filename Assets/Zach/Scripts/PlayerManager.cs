@@ -7,6 +7,8 @@ public class PlayerManager : MonoBehaviour {
     public PlayerController PlayerOne;
     public PlayerController PlayerTwo;
 
+    public GameObject hitboxPunch;
+
     void Awake()
     {
         if (ServiceLocator.instance.playerManager == null)
