@@ -7,13 +7,13 @@ public class ServiceLocator : MonoBehaviour {
     public static ServiceLocator instance;
 
     public PlayerManager playerManager;
+    public CameraScript cam;
 
     void Awake()
     {
         if (instance == null)
         {
             instance = this;
-            DontDestroyOnLoad(gameObject);
         }
         else
         {
